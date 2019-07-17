@@ -1,0 +1,39 @@
+.menu {
+    display: none;
+}
+
+nav {
+    margin: 20px -30px 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav li {
+    flex: 1;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    line-height: 35px;
+    display: block;
+    text-align: center;
+}
+
+nav li:last-child a {
+    border-right: none;
+}
+
+nav a:hover,
+nav a:active,
+nav a:focus {
+    color: gray;
+    outline: none;
+}
