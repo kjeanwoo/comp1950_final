@@ -1,0 +1,73 @@
+.schedulebody{
+    opacity: 0.7;
+    margin: 0;
+
+}
+    
+    .scheduleboard{
+
+    justify-content:center;
+    align-content:center;    
+    margin: 0 auto;
+    padding: 8px;
+    display:grid;
+    grid-auto-rows: minmax(150px,auto);
+    grid-gap:60px;
+    grid-template-areas:
+    "one       two       three  "
+    "four      five       six"
+    "seven     eight       nine"
+    "ten        eleven     twelve"
+    ;
+}
+
+
+ .container{
+    box-shadow: 3px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 1.5px solid black;
+    max-width: 300px;
+    margin:auto;
+    text-align: left;
+    font-family: $body-font;
+    font-size:20px;
+    background-color:$bg-color-white;
+    
+    ul {
+        list-style-type: circle;
+        height:200px;
+      }
+      img{
+          height:100%;
+      }
+
+  }
+  
+  
+  .container-01 {
+	grid-area: one;
+}
+.container-02 {
+	grid-area: two;
+}
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }

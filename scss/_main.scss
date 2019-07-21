@@ -17,22 +17,13 @@ img {
 body {
     margin: 0;
     font-family: 'Raleway', Arial, sans-serif;
-    background-image: url("../images/bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: $bg-color-white;
 }
 
 h1, h2, h3, h4, h5, nav a {
     font-family: 'Raleway', Arial, sans-serif;
 }
 
-.wrapper {
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-	min-height: 100vh;
-	flex-direction: column;
-}
 
 header {
     color: Black;
