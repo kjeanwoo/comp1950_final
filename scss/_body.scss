@@ -26,8 +26,9 @@ article p {
 }
 
 .btn {
-    background-color: #4586FF;
-    border: none;
+    background-color: $brand-color;
+    border-radius:  8px;
+    border: 2px solid gray;
     color: white;
     padding: 15px 32px;
     margin-bottom: 30px;
@@ -35,4 +36,9 @@ article p {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+.btn:hover {
+    background-color: gray;
+    transition-duration: 1s;
 }
