@@ -52,6 +52,12 @@ article p {
     padding: 30px;
 }
 
+.enrol {
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+
 .btn {
     background-color: $brand-color;
     border-radius:  8px;
@@ -69,3 +75,23 @@ article p {
     background-color: gray;
     transition-duration: 1s;
 }
+
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    font-weight: bold;
+    text-align: left;
+}
+
+th, td {
+    padding: 5px;
+}
+
