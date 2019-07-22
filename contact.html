@@ -1,42 +1,78 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BCIT - COMP 1950</title>
-<link rel="stylesheet" href="styles/styles.css">
-<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-</head>
-<body>
-<div class="wrapper">
-<header>
-    <button class="menu" id="menu">
-        <span class="button-content">
-            <span class="text">Menu</span>
-            <span class="bar"></span>
-        </span><!-- end button-content -->
-    </button>
-    <nav id="main-navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="course-outline.html">Course Outline</a></li>
-            <li><a href="schedule.html">Schedule</a></li>
-            <li><a href="lessons.html">Lessons</a></li>
-            <li><a href="contact.html">Contact</a></li>
 
-        </ul>
-    </nav>
-</header>
-<main>
-    <article>
-        <h1>Welcome to COMP 1950</h1>
-        <p></p>
-    </article>
-</main>
-<footer>
-    <p>&copy 2019 Jean Kim & Victoria Kim</p>
-</footer>
-</div><!-- end wrapper -->
-<script src="scripts/script-menu-overlay.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BCIT - COMP 1950</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <button class="menu" id="menu">
+                <span class="button-content">
+                    <span class="text">Menu</span>
+                    <span class="bar"></span>
+                </span><!-- end button-content -->
+            </button>
+            <nav id="main-navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="course-outline.html">Course Outline</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="lessons.html">Lessons</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h2>Contact</h2>
+                <form id="contact-form" class="contact-form" action="thank-you.html" method="get">
+                    <div class="input-group">
+                        <label for="fname">First Name: </label>
+                        <input id="fname" type="text">
+
+                    </div>
+
+                    <div class="input-group">
+                        <label for="lname">Last Name: </label>
+                        <input id="lname" type="text">
+
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">E-mail: </label>
+                        <input id="email" type="text">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="snum">Student Number: </label>
+                        <input id="snum" type="text">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="stype">Student Type:</label> <br>
+                        <input type="radio" name="stype" value="current" checked> Current Student <br>
+                        <input type="radio" name="stype" value="prospective"> Prospective Student<br>
+                    </div>
+
+                    <div class="input-group">
+                        <input id="submit" type="submit" value="submit">
+                    </div>
+                </form>
+            </article>
+        </main>
+        <footer>
+            <p>&copy 2019 Jean Kim & Victoria Kim</p>
+        </footer>
+    </div><!-- end wrapper -->
+    <script src="scripts/script-menu-overlay.js"></script>
+    <script src="scripts/form-validator.js"></script>
 </body>
+
 </html>
