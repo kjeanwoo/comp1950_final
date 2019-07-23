@@ -386,6 +386,7 @@ nav a:focus {
   padding: 8px;
   display: -ms-grid;
   display: grid;
+  max-width: 900px;
   grid-auto-rows: minmax(150px, auto);
   grid-gap: 60px;
       grid-template-areas: "one       two       three  " "four      five       six" "seven     eight       nine" "ten        eleven     twelve";
@@ -445,6 +446,12 @@ a {
 
 button:hover, a:hover {
   opacity: 0.7;
+}
+
+@media (max-width: 700px) {
+  .scheduleboard {
+        grid-template-areas: 'one' 'two' 'three';
+  }
 }
 
 .back-btn {

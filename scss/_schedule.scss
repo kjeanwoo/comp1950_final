@@ -5,12 +5,12 @@
 }
     
     .scheduleboard{
-
     justify-content:center;
     align-content:center;    
     margin: 0 auto;
     padding: 8px;
     display:grid;
+    max-width: 900px;
     grid-auto-rows: minmax(150px,auto);
     grid-gap:60px;
     grid-template-areas:
@@ -70,4 +70,13 @@
   
   button:hover, a:hover {
     opacity: 0.7;
+  }
+
+  @media (max-width: 700px) {
+    .scheduleboard {
+      grid-template-areas:
+        'one'
+        'two'
+        'three';
+    }
   }
